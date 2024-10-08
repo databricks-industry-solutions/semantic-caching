@@ -1,0 +1,101 @@
+question,base
+What automated hyperparameter tuning methods are available on Databricks' machine learning platform?,1
+How does Databricks' platform optimize hyperparameters for machine learning models?,1
+Can you describe the hyperparameter tuning process on Databricks' machine learning platform?,1
+What tools and libraries does Databricks' platform provide for automated hyperparameter tuning?,1
+How does Databricks' platform support Bayesian optimization for hyperparameter tuning?,1
+What is the approach used by Databricks' platform for grid search and random search hyperparameter tuning?,1
+Can you outline the automated hyperparameter tuning workflow on Databricks' machine learning platform?,1
+How does Databricks' platform integrate with other libraries and frameworks for hyperparameter tuning?,1
+What are the benefits of using Databricks' platform for automated hyperparameter tuning?,1
+Can you provide an example of how to use Databricks' platform for automated hyperparameter tuning in a machine learning project?,1
+What capabilities does Databricks' machine learning platform offer for large-scale deep learning?,2
+How does Databricks' platform support the training and deployment of deep learning models at scale?,2
+Can Databricks' platform handle the computational demands of large-scale deep learning workloads?,2
+What distributed computing capabilities does Databricks' platform offer for deep learning?,2
+How does Databricks' platform optimize deep learning workloads for performance and scalability?,2
+What is the architecture of Databricks' platform for supporting large-scale deep learning?,2
+"Can you describe the deep learning workflow on Databricks' platform, from data preparation to model deployment?",2
+"How does Databricks' platform integrate with popular deep learning frameworks, such as TensorFlow and PyTorch?",2
+"What are the benefits of using Databricks' platform for large-scale deep learning, compared to other solutions?",2
+Can you provide an example of a large-scale deep learning project that was successfully deployed on Databricks' platform?,2
+What feature engineering techniques are supported by Databricks' machine learning platform?,3
+How does Databricks' platform handle data preprocessing and feature extraction?,3
+What data transformation and normalization capabilities are available in Databricks' machine learning platform?,3
+Can you describe the data preprocessing workflow on Databricks' platform?,3
+What feature selection and dimensionality reduction techniques are supported by Databricks' platform?,3
+How does Databricks' platform handle missing data and outliers in feature engineering?,3
+What data encoding and scaling capabilities are available in Databricks' machine learning platform?,3
+Can you outline the feature engineering and data preprocessing tools available in Databricks' platform?,3
+How does Databricks' platform support the creation of custom feature engineering and data preprocessing pipelines?,3
+"What are the benefits of using Databricks' platform for feature engineering and data preprocessing, compared to other solutions?",3
+What model interpretability and explainability techniques are supported by Databricks' machine learning platform?,4
+How does Databricks' platform provide insights into model behavior and decision-making processes?,4
+Can you describe the SHAP and LIME implementation on Databricks' machine learning platform?,4
+What visualization tools are available on Databricks' platform for model interpretability and explainability?,4
+How does Databricks' platform support the use of feature importance and partial dependence plots for model interpretability?,4
+Can you outline the model explainability workflow on Databricks' machine learning platform?,4
+"What are the benefits of using Databricks' platform for model interpretability and explainability, compared to other solutions?",4
+"How does Databricks' platform integrate with popular model interpretability and explainability libraries, such as SHAP and LIME?",4
+Can you provide an example of how to use Databricks' platform for model interpretability and explainability in a real-world scenario?,4
+"What are the limitations and challenges of using Databricks' platform for model interpretability and explainability, and how can they be addressed?",4
+What NLP capabilities are available on Databricks' machine learning platform?,5
+Can Databricks' platform be used for text analysis and processing tasks?,5
+What NLP libraries and frameworks are supported by Databricks' machine learning platform?,5
+How does Databricks' platform support the use of word embeddings and language models for NLP tasks?,5
+Can you describe the NLP workflow on Databricks' machine learning platform?,5
+"What are the benefits of using Databricks' platform for NLP tasks, compared to other solutions?",5
+"How does Databricks' platform integrate with popular NLP libraries, such as NLTK and spaCy?",5
+"Can you provide an example of how to use Databricks' platform for NLP tasks, such as text classification and sentiment analysis?",5
+"What are the limitations and challenges of using Databricks' platform for NLP tasks, and how can they be addressed?",5
+"How does Databricks' platform support the use of deep learning models for NLP tasks, such as recurrent neural networks (RNNs) and transformers?",5
+What real-time model serving capabilities are available on Databricks' machine learning platform?,6
+How does Databricks' platform support low-latency model inference for real-time applications?,6
+Can you describe the architecture of Databricks' platform for real-time model serving and inference?,6
+"What are the benefits of using Databricks' platform for real-time model serving and inference, compared to other solutions?",6
+How does Databricks' platform support the use of GPU acceleration for real-time model inference?,6
+Can you outline the workflow for deploying and managing real-time models on Databricks' platform?,6
+What are the latency and throughput characteristics of Databricks' platform for real-time model serving and inference?,6
+"How does Databricks' platform integrate with popular model serving frameworks, such as TensorFlow Serving and AWS SageMaker?",6
+Can you provide an example of how to use Databricks' platform for real-time model serving and inference in a production environment?,6
+What are the scalability and reliability features of Databricks' platform for real-time model serving and inference?,6
+What model monitoring and logging features are available in Databricks' machine learning platform?,7
+How does Databricks' platform support the tracking of model performance and data drift?,7
+Can you describe the model monitoring workflow on Databricks' machine learning platform?,7
+What kind of metrics and logs are available for model monitoring and logging on Databricks' platform?,7
+How does Databricks' platform support the use of dashboards and visualizations for model monitoring and logging?,7
+Can you outline the steps for setting up model monitoring and logging on Databricks' platform?,7
+"What are the benefits of using Databricks' platform for model monitoring and logging, compared to other solutions?",7
+"How does Databricks' platform integrate with popular model monitoring and logging tools, such as Prometheus and Grafana?",7
+Can you provide an example of how to use Databricks' platform for model monitoring and logging in a production environment?,7
+What are the scalability and reliability features of Databricks' platform for model monitoring and logging?,7
+What computer vision capabilities are available on Databricks' machine learning platform?,8
+Can Databricks' platform be used for image classification and object detection tasks?,8
+What libraries and frameworks are supported by Databricks' platform for computer vision tasks?,8
+How does Databricks' platform support the use of deep learning models for computer vision tasks?,8
+Can you describe the computer vision workflow on Databricks' machine learning platform?,8
+"What are the benefits of using Databricks' platform for computer vision tasks, compared to other solutions?",8
+"How does Databricks' platform integrate with popular computer vision libraries, such as OpenCV and Pillow?",8
+"Can you provide an example of how to use Databricks' platform for computer vision tasks, such as image classification and object detection?",8
+What are the scalability and reliability features of Databricks' platform for computer vision tasks?,8
+How does Databricks' platform support the use of transfer learning and pre-trained models for computer vision tasks?,8
+What ensemble methods are supported by Databricks' machine learning platform?,9
+Can Databricks' platform be used to combine multiple models using stacking?,9
+How does Databricks' platform support the use of bagging and boosting for ensemble methods?,9
+What are the benefits of using ensemble methods and stacking on Databricks' machine learning platform?,9
+Can you describe the workflow for creating and deploying ensemble models on Databricks' platform?,9
+How does Databricks' platform support the use of hyperparameter tuning for ensemble methods?,9
+What are the scalability and reliability features of Databricks' platform for ensemble methods and stacking?,9
+Can you provide an example of how to use Databricks' platform for ensemble methods and stacking in a real-world scenario?,9
+"How does Databricks' platform integrate with popular ensemble libraries, such as scikit-learn and XGBoost?",9
+"What are the limitations and challenges of using ensemble methods and stacking on Databricks' machine learning platform, and how can they be addressed?",9
+What time series forecasting capabilities are available on Databricks' machine learning platform?,10
+Can Databricks' platform be used for anomaly detection in time series data?,10
+What algorithms and techniques are supported by Databricks' platform for time series forecasting and anomaly detection?,10
+"How does Databricks' platform support the use of ARIMA, SARIMA, and other traditional time series forecasting methods?",10
+Can you describe the workflow for creating and deploying time series forecasting models on Databricks' platform?,10
+"What are the benefits of using Databricks' platform for time series forecasting and anomaly detection, compared to other solutions?",10
+"How does Databricks' platform support the use of deep learning models, such as LSTM and GRU, for time series forecasting?",10
+Can you provide an example of how to use Databricks' platform for time series forecasting and anomaly detection in a real-world scenario?,10
+What are the scalability and reliability features of Databricks' platform for time series forecasting and anomaly detection?,10
+"How does Databricks' platform integrate with popular time series libraries, such as pandas and statsmodels?",10
