@@ -59,7 +59,7 @@ os.environ['TOKEN'] = TOKEN
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We instantiate a Vector Search client to interact with a Vector Search endpoint to create a cache.
+# MAGIC We instantiate a Vector Search client to interact with a Vector Search endpoint to create a cache. This will be an additional Vector Search Index, which, if the cache is hit, can immediately route the question to the answer in the cache.
 
 # COMMAND ----------
 
@@ -97,7 +97,7 @@ semantic_cache.create_cache()
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC We finally load the cache with predefined Q&A pairs: i.e., `/data/synthetic_qa.txt`.
+# MAGIC We finally load the cache with predefined Q&A pairs: i.e., `/data/synthetic_qa.txt`. This synthetic dataset contains a set of questions that have already been answered.
 
 # COMMAND ----------
 
@@ -134,7 +134,7 @@ semantic_cache.warm_cache()
 # MAGIC logging.getLogger("py4j.java_gateway").setLevel(logging.ERROR)
 # MAGIC logging.getLogger("py4j.clientserver").setLevel(logging.ERROR)
 # MAGIC
-# MAGIC ## Enable MLflow Tracing
+# MAGIC # Enable MLflow Tracing
 # MAGIC mlflow.langchain.autolog()
 # MAGIC
 # MAGIC # Get configuration
@@ -260,7 +260,7 @@ chain.invoke(config.INPUT_EXAMPLE)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Let's ask a question to the chain that we know a similar question has not been asked before therefore doesn't exist in the caceh. We see in the trace that the entire chain is indeed executed.
+# MAGIC Let's ask a question to the chain that we know a similar question has not been asked before therefore doesn't exist in the cache. We see in the trace that the entire chain is indeed executed.
 
 # COMMAND ----------
 
@@ -269,7 +269,7 @@ chain.invoke({'messages': [{'content': "How does Databricks' feature Genie autom
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC If we reformulate the question without changing the meaning, we get the response from the cache. We see this in the trace and the execution time is less than half.
+# MAGIC If we reformulate the question without changing the meaning, we get the response from the cache, as the question has been upserted into the cache. We see this in the trace and the execution time is less than half.
 
 # COMMAND ----------
 
@@ -278,7 +278,7 @@ chain.invoke({'messages': [{'content': "What is the role of Databricks' feature 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Where to set the similarity threshold -`0.01` in this demo defined in `config.py`- is arguably the most important degin decision you need to make for your solution. A threshold that is too high will reduce the hit rate and undermine the effect of semantic caching, but a threshold too low could generate many false positives. There is a fine balance you would need to strike. To make an infromed descision, refer to the exploratory data analysis performed in the `00_introduction` notebook.
+# MAGIC Where to set the similarity threshold -`0.01` in this demo defined in `config.py`- is arguably the most important design decision you need to make for your solution. A threshold that is too high will reduce the hit rate and undermine the effect of semantic caching, but a threshold too low could generate many false positives. There is a fine balance you would need to strike. To make an informed decision, refer to the exploratory data analysis performed in the `00_introduction` notebook.
 # MAGIC
 # MAGIC If we are happy with the chain, we will go ahead and register the chain in Unity Catalog.
 
@@ -292,7 +292,7 @@ uc_registered_model_info = mlflow.register_model(model_uri=logged_chain_info.mod
 # MAGIC %md
 # MAGIC ## Deploy the chain to a Model Serving endpoint
 # MAGIC
-# MAGIC We deploy the chaing using custom functions defined in the `utils.py` script.
+# MAGIC We deploy the chain using custom functions defined in the `utils.py` script.
 
 # COMMAND ----------
 

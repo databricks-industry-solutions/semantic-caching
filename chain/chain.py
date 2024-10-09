@@ -9,7 +9,7 @@ from config import Config
 import mlflow
 import os
 
-## Enable MLflow Tracing
+# Enable MLflow Tracing
 mlflow.langchain.autolog()
 
 # load parameters

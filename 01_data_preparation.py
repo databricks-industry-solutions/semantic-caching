@@ -129,7 +129,7 @@ docs
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We have successfully set up the vector database for our RAG chatbot. In the next `02_rag_chatbot` notebook, we will build a standard RAG chatbot without semantic caching, which will serve as a benchmark. Later, in the `03_rag_chatbot_with_cache notebook`, we will introduce semantic caching and compare its performance.
+# MAGIC We have successfully set up the vector database for our RAG chatbot. In the next `02_rag_chatbot` notebook, we will build a standard RAG chatbot without semantic caching, which will serve as a benchmark. Later, in the `03_rag_chatbot_with_cache` notebook, we will introduce semantic caching and compare its performance.
 
 # COMMAND ----------
 

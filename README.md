@@ -4,13 +4,17 @@
 [![CLOUD](https://img.shields.io/badge/CLOUD-CHANGE_ME-blue?logo=googlecloud&style=for-the-badge)](https://databricks.com/try-databricks)
 
 ## Business Problem
-WHAT IS THE BUSINESS PROBLEM ADDRESSED BY THIS SOLUTION
+Generative AI systems are transforming industries, with methods like Retrieval Augmented Generation (RAG) and Compound AI systems at the forefront. These systems enhance tasks like information retrieval, decision-making, and content generation but come with high computational costs.
+
+Semantic caching is a technique widely used to reduce the computational demands of AI systems by storing previously processed queries and responses. This prevents redundant computations for similar queries, improving efficiency by reducing latency and server load. It is especially valuable for scaling AI agentic applications, where query variations are less common.
+
+Databricks offers an ideal platform for building AI agents with semantic caching through its Mosaic AI solution. It provides integrated components like a vector database, agent framework / evaluation, all governed centrally. This solution accelerator implements semantic caching, optimizing response times and reducing computational overhead for similar queries.
 
 ## Reference Architecture
-IMAGE TO REFERENCE ARCHITECTURE
+<img src='https://github.com/databricks-industry-solutions/semantic-caching/blob/main/image/architecture.png' width=800>
 
 ## Authors
-<john.doe@databricks.com>
+<ryuta.yoshimatsu@databricks.com>, <nehme.tohme@databricks.com>, <ellen.hoeven@databricks.com>
 
 ## Project support 
 
@@ -21,6 +25,3 @@ Any issues discovered through the use of this project should be filed as GitHub 
 ## License
 
 &copy; 2024 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the Databricks License [https://databricks.com/db-license-source].  All included or referenced third party libraries are subject to the licenses set forth below.
-
-| library                                | description             | license    | source                                              |
-|----------------------------------------|-------------------------|------------|-----------------------------------------------------|

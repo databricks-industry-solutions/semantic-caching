@@ -38,7 +38,7 @@ config = Config()
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Here, we define environmental variables `HOST` and `TOKEN` for our Model Serving endpoint to authenticate against our Vector Search index. 
+# MAGIC Here, we define environment variables `HOST` and `TOKEN` for our Model Serving endpoint to authenticate against our Vector Search index. 
 
 # COMMAND ----------
 
@@ -56,7 +56,7 @@ os.environ['TOKEN'] = TOKEN
 # MAGIC %md
 # MAGIC ## Create and register a chain to MLflow 
 # MAGIC
-# MAGIC The next cell defines our standard RAG chain using Langchain. When executed, it will write the content to the `chain/chain.py` file, which will then be used to log the chain in MLflow.
+# MAGIC The next cell defines a standard RAG chain using Langchain. When executed, it will write the content to the `chain/chain.py` file, which will then be used to log the chain in MLflow.
 
 # COMMAND ----------
 
@@ -72,7 +72,7 @@ os.environ['TOKEN'] = TOKEN
 # MAGIC import mlflow
 # MAGIC import os
 # MAGIC
-# MAGIC ## Enable MLflow Tracing
+# MAGIC # Enable MLflow Tracing
 # MAGIC mlflow.langchain.autolog()
 # MAGIC
 # MAGIC # load parameters
@@ -229,7 +229,7 @@ utils.send_request_to_endpoint(
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC In this notebook, we built a standard RAG chatbot without semantic caching to serve. We will use this chain to benchmak against the chain with semantic caching, which we will build in the next `03_rag_chatbot_with_cache` notebook.
+# MAGIC In this notebook, we built a standard RAG chatbot without semantic caching to serve. We will use this chain to benchmark against the chain with semantic caching, which we will build in the next `03_rag_chatbot_with_cache` notebook.
 
 # COMMAND ----------
 

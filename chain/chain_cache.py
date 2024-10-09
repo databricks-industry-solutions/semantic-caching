@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logging.getLogger("py4j.java_gateway").setLevel(logging.ERROR)
 logging.getLogger("py4j.clientserver").setLevel(logging.ERROR)
 
-## Enable MLflow Tracing
+# Enable MLflow Tracing
 mlflow.langchain.autolog()
 
 # Get configuration

@@ -105,7 +105,7 @@ display(rag_chain_with_cache_results)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Just by looking at the execution time, we notice that the chain with cache ran more thatn 2x faster than the the chain without.
+# MAGIC Just by looking at the execution time, we notice that the chain with cache ran more than 2x faster than the chain without.
 
 # COMMAND ----------
 
@@ -128,7 +128,7 @@ display(synthetic_qa)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We construct an evaluation dataset for the standard RAG chain and the chain with the cache. The `prediction` colume stores the responses from the chain.
+# MAGIC We construct an evaluation dataset for the standard RAG chain and the chain with the cache. The `prediction` column stores the responses from the chain.
 
 # COMMAND ----------
 
@@ -240,7 +240,7 @@ display(cache_log)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Let's calculate the mean execution time per query. We see a significant drop in the chain with cache, which is direclty translatable for cost reduction.
+# MAGIC Let's calculate the mean execution time per query. We see a significant drop in the chain with cache, which is directly translatable to cost reduction.
 
 # COMMAND ----------
 
@@ -250,7 +250,7 @@ print(f"rag chain with cache mean execution time: {round(cache_log['execution_ti
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC One of the important KPIs for a cachin solution is the hit rate. We can retrieve this information from the traces stored in the inferenc table.
+# MAGIC One of the important KPIs for a caching solution is the hit rate. We can retrieve this information from the traces stored in the inference table.
 
 # COMMAND ----------
 
