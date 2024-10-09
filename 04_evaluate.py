@@ -217,7 +217,7 @@ print(f"See aggregated evaluation results below: \n{cache_results.metrics}")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC The evaluation results show that the standard RAG chain performed slightly better on metrics like `answer_correctness/v1/mean` (scoring `4.82` vs. `4.69`) and `answer_relevance/v1/mean` (scoring `4.91` vs. `4.7`). These minor drops in performance are expected when responses are retrieved from the cache. The key takeaway is to assess whether these differences are acceptable given the cost and latency reductions provided by the caching solution. Ultimately, the decision should be based on how these trade-offs impact the business value of your use case.
+# MAGIC The evaluation results show that the standard RAG chain performed slightly better on the metrics `answer_relevance/v1/mean` (scoring `4.9` vs. `4.7`). This minor drop in quality is expected when responses are retrieved from the cache. The key takeaway is to assess whether the difference is acceptable given the cost and latency reductions provided by the caching solution. Ultimately, the decision should be based on how these trade-offs impact the business value of your use case.
 
 # COMMAND ----------
 
@@ -267,7 +267,7 @@ print(f"Number of times the query hit the cache: {cache_trace.sum()}/100")
 cache_execution_time = np.array(
     cache_log["response"].apply(lambda x: json.loads(x)["databricks_output"]["trace"]["info"]["execution_time_ms"] if len(json.loads(x)["databricks_output"]["trace"]["data"]["spans"]) == 6 else 0)
 )
-print(f"The mean executin time of the queries that hit the cache: {round(cache_execution_time.sum()/cache_trace.sum()/1000, 4)} seconds")
+print(f"The mean execution time of the queries that hit the cache: {round(cache_execution_time.sum()/cache_trace.sum()/1000, 4)} seconds")
 
 # COMMAND ----------
 
