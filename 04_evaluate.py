@@ -264,6 +264,13 @@ print(f"Number of times the query hit the cache: {cache_trace.sum()}/100")
 
 # COMMAND ----------
 
+cache_execution_time = np.array(
+    cache_log["response"].apply(lambda x: json.loads(x)["databricks_output"]["trace"]["info"]["execution_time_ms"] if len(json.loads(x)["databricks_output"]["trace"]["data"]["spans"]) == 6 else 0)
+)
+print(f"The mean executin time of the queries that hit the cache: {round(cache_execution_time.sum()/cache_trace.sum()/1000, 4)} seconds")
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC In this notebook, we conducted a benchmarking exercise to compare the solutions with and without semantic caching. For this specific dataset, we observed a significant reduction in both cost and latency, though with a slight trade-off in quality. It’s important to emphasize that every use case should carefully assess the impact of these gains and losses on business objectives before making a final decision.
 
