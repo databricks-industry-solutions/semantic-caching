@@ -4,9 +4,9 @@
 [![CLOUD](https://img.shields.io/badge/CLOUD-CHANGE_ME-blue?logo=googlecloud&style=for-the-badge)](https://databricks.com/try-databricks)
 
 ## Business Problem
-Generative AI systems are transforming industries, with methods like Retrieval Augmented Generation (RAG) and Compound AI systems at the forefront. These systems enhance tasks like information retrieval, decision-making, and content generation but come with high computational costs.
+Generative AI systems are transforming industries, with methods like Retrieval Augmented Generation (RAG) and Compound AI systems at the forefront. These systems enhance tasks like information retrieval, decision-making, and content generation but can come with high computational costs.
 
-Semantic caching is a technique widely used to reduce the computational demands of AI systems by storing previously processed queries and responses. This prevents redundant computations for similar queries, improving efficiency by reducing latency and server load. It is especially valuable for scaling AI agentic applications, where query variations are less common.
+Semantic caching is a technique widely used to reduce the computational demands of AI systems by storing previously processed queries and responses. This prevents redundant computations for similar queries, improving efficiency by reducing latency and server load. It is especially valuable for scaling agentic applications, where query variations are less common.
 
 Databricks offers an ideal platform for building AI agents with semantic caching through its Mosaic AI solution. It provides integrated components like a vector database, agent framework / evaluation, all governed centrally. This solution accelerator implements semantic caching, optimizing response times and reducing computational overhead for similar queries.
 
