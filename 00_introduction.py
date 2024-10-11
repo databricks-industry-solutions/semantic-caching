@@ -86,7 +86,7 @@ import mlflow.deployments
 from pyspark.sql.functions import udf, pandas_udf
 from pyspark.sql.types import StringType
 
-df = pd.read_csv('data/synthetic_questions_100.csv')[['base', 'question']]
+qa_data = pd.read_csv('data/synthetic_questions_100.csv')[['base', 'question']]
 
 deploy_client = mlflow.deployments.get_deploy_client("databricks")
 def get_embedding(question):
@@ -94,9 +94,9 @@ def get_embedding(question):
     return response.data[0]["embedding"]
 
 # Apply an embedding model to the 'question' column and create a new column 'embedding'
-df["embedding"] = df["question"].apply(lambda x: get_embedding(x))
+qa_data["embedding"] = qa_data["question"].apply(lambda x: get_embedding(x))
 
-display(df)
+display(qa_data)
 
 # COMMAND ----------
 
@@ -105,7 +105,7 @@ display(df)
 
 # COMMAND ----------
 
-df = df.merge(df, how='cross')
+df = qa_data.merge(qa_data, how='cross')
 
 # COMMAND ----------
 
