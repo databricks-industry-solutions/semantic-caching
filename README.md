@@ -14,7 +14,7 @@ Databricks offers an ideal platform for building AI agents with semantic caching
 <img src='https://github.com/databricks-industry-solutions/semantic-caching/blob/main/image/architecture.png' width=800>
 
 ## Authors
-<ryuta.yoshimatsu@databricks.com>, <nehme.tohme@databricks.com>, <ellen.hoeven@databricks.com>
+<ryuta.yoshimatsu@databricks.com>, <nehme.tohme@databricks.com>, <ellen.hirt@databricks.com>
 
 ## Project support 
 
