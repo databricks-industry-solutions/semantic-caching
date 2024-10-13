@@ -189,7 +189,7 @@ def wait_for_model_serving_endpoint_to_be_ready(endpoint_name):
     # Wait for it to be ready
     w = WorkspaceClient()
     state = ""
-    for i in range(200):
+    for i in range(400):
         state = w.serving_endpoints.get(endpoint_name).state
         if state.config_update == EndpointStateConfigUpdate.IN_PROGRESS:
             if i % 40 == 0:
