@@ -151,8 +151,8 @@ def deploy_model_serving_endpoint(
             "workload_size": "Small",
             "scale_to_zero_enabled": "true",
             "environment_vars": {
-                    "HOST": host,
-                    "TOKEN": token,
+                    "DATABRICKS_HOST": host,
+                    "DATABRICKS_TOKEN": token,
                     "ENABLE_MLFLOW_TRACING": "true",
                 }
             }],

@@ -17,8 +17,8 @@ config = Config()
 
 # Connect to the Vector Search Index
 vs_index = VectorSearchClient(
-    workspace_url=os.environ['HOST'],
-    personal_access_token=os.environ['TOKEN'],
+    workspace_url=os.environ['DATABRICKS_HOST'],
+    personal_access_token=os.environ['DATABRICKS_TOKEN'],
     disable_notice=True,
     ).get_index(
     endpoint_name=config.VECTOR_SEARCH_ENDPOINT_NAME,
