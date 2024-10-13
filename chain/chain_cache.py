@@ -27,8 +27,8 @@ config = Config()
 
 # Connect to Vector Search
 vsc = VectorSearchClient(
-    workspace_url=os.environ['HOST'],
-    personal_access_token=os.environ['TOKEN'],
+    workspace_url=os.environ['DATABRICKS_HOST'],
+    personal_access_token=os.environ['DATABRICKS_TOKEN'],
     disable_notice=True,
 )
 
