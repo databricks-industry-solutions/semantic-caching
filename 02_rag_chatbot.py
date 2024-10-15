@@ -205,7 +205,7 @@ utils.wait_for_model_serving_endpoint_to_be_ready(config.ENDPOINT_NAME)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Once the endpoint is up and running, let's send a request and see how it responds.
+# MAGIC Once the endpoint is up and running, let's send a request and see how it responds. If the following cell fails with 404 Not Found error, take a minute and try re-running the cell. 
 
 # COMMAND ----------
 
