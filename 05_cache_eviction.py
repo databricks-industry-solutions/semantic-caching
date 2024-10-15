@@ -29,8 +29,8 @@ import os
 HOST = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiUrl().get()
 TOKEN = dbutils.notebook.entry_point.getDbutils().notebook().getContext().apiToken().get()
 
-os.environ['HOST'] = HOST
-os.environ['TOKEN'] = TOKEN
+os.environ['DATABRICKS_HOST'] = HOST
+os.environ['DATABRICKS_TOKEN'] = TOKEN
 
 # COMMAND ----------
 
