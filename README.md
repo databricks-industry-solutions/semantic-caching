@@ -13,6 +13,11 @@ Databricks offers an ideal platform for building AI agents with semantic caching
 ## Reference Architecture
 <img src='https://github.com/databricks-industry-solutions/semantic-caching/blob/main/image/architecture.png' width=800>
 
+## [Vector Lab](https://www.youtube.com/@VectorLab) - Optimise RAG applications with semantic caching on Databricks
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/suwphPToYlk/0.jpg)](https://www.youtube.com/watch?v=suwphPToYlk)
+
+
 ## Authors
 <ryuta.yoshimatsu@databricks.com>, <nehme.tohme@databricks.com>, <ellen.hirt@databricks.com>
 
