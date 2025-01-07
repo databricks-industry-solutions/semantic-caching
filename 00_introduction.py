@@ -149,14 +149,14 @@ df.groupby('similar').describe().T
 # COMMAND ----------
 
 df.groupby('similar')['score'].plot(
-  kind='hist', 
-  bins=50, 
-  alpha=0.65, 
-  density=True, 
-  figsize=(10, 6), 
-  grid=True, 
-  legend=True,
-  )
+    kind='hist', 
+    bins=50, 
+    alpha=0.65, 
+    density=True, 
+    figsize=(10, 6), 
+    grid=True, 
+    legend=True,
+    )
 
 # COMMAND ----------
 
