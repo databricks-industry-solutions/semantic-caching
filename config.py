@@ -1,7 +1,7 @@
 class Config:
     def __init__(self):
 
-        self.LLM_MODEL_SERVING_ENDPOINT_NAME = "databricks-dbrx-instruct"
+        self.LLM_MODEL_SERVING_ENDPOINT_NAME = "databricks-meta-llama-3-3-70b-instruct"
         self.EMBEDDING_MODEL_SERVING_ENDPOINT_NAME = "databricks-gte-large-en"
         
         # For vector search index
